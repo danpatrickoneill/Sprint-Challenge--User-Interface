@@ -76,8 +76,8 @@ p {
 
 .uni-header {
     display: flex;
-    align-items: flex-end;
-    margin: 1rem 0 3rem;
+    align-items: baseline;
+    margin: 20px 0 40px;
 }
 
 .uni-nav {
@@ -87,6 +87,7 @@ p {
 }
 
 .uni-nav a {
+    font-size: .9em;
     color: black;
     text-decoration: none;
 }
@@ -231,7 +232,7 @@ footer nav a:hover {
 }
 
 /* ABOUT PAGE CSS STARTS HERE */
-/* border: 1px solid green; */
+/*  */
 
 .about-container {
     width: 800px;
@@ -288,7 +289,7 @@ footer nav a:hover {
 }
 
 .content-card button:hover {
-    background: #F5F5F5
+    background: #E5E5E5
 }
 
 .content-card button:active {
@@ -296,11 +297,67 @@ footer nav a:hover {
     top: 1px;
     left: 1px;
 }
+
 .about-bottom-content {
     margin-bottom: 30px;
 }
 
 .about-bottom-content h3, .about-bottom-content p {
-    /* Why doesn't margin: 0 auto; work here either? Even just for the p? I feel like it's because its 800px wide, but I don't really get it */
     padding: 0 20px;
+}
+
+/* CONTACT PAGE CSS STARTS HERE */
+
+.contact-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.contact-form input {
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    height: 2em;
+    margin: 0 auto 30px;
+}
+
+.contact-form .subject-input {
+    height: 10em;
+}
+
+.contact-form button {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin: 0 auto 30px;
+}
+
+.contact-form a {
+    text-decoration: none;
+}
+
+.contact-form button:focus {
+    outline: 0;
+}
+
+.contact-form button:hover {
+    background: #E5E5E5
+}
+
+.contact-form button:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.contact-submission {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    margin: 40px 5%;
 }
