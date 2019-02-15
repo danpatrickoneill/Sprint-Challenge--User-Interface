@@ -75,7 +75,7 @@ p {
     margin: 0 auto;
 }
 
-.about-header {
+.uni-header {
     display: flex;
     align-items: flex-end;
     margin: 1rem 0 3rem;
@@ -96,7 +96,7 @@ p {
     text-decoration: underline;
 }
 
-.about-header-img {
+.uni-header-img {
     margin-bottom: 1rem;
 }
 
