@@ -66,9 +66,8 @@ p {
     line-height: 1.4;
 }
 
-/* INDEX PAGE CSS STARTS HERE */
 
-/* border: 1px solid green; */
+/* UNIVERSAL CSS STARTS HERE */
 
 .container {
     width: 800px;
@@ -96,8 +95,10 @@ p {
     text-decoration: underline;
 }
 
-.uni-header-img {
-    margin-bottom: 1rem;
+/* INDEX PAGE CSS STARTS HERE */
+
+.index-header-img {
+    margin-bottom: 20px;
 }
 
 .top-content {
@@ -172,4 +173,57 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* ABOUT PAGE CSS STARTS HERE */
+/* border: 1px solid green; */
+
+.about-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.about-header-img {
+    margin-bottom: 20px;
+}
+
+.about-top-content {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed black;
+}
+
+.about-top-content h1, .about-top-content p {
+    /* Why doesn't margin: 0 auto; work here? Even just for the p? I feel like it's because its 800px wide, but I don't really get it */
+    padding: 0 20px;
+}
+
+.about-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-card {
+    width: 45%;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px dashed black;
+}
+
+.content-card p {
+    margin-bottom: 20px;
+}
+
+.about-bottom-content {
+    margin-bottom: 30px;
+}
+
+.about-bottom-content h3, .about-bottom-content p {
+    /* Why doesn't margin: 0 auto; work here either? Even just for the p? I feel like it's because its 800px wide, but I don't really get it */
+    padding: 0 20px;
 }
