@@ -66,9 +66,38 @@ p {
     line-height: 1.4;
 }
 
+/* INDEX PAGE CSS STARTS HERE */
+
+/* border: 1px solid green; */
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.about-header {
+    display: flex;
+    align-items: flex-end;
+    margin: 1rem 0 3rem;
+}
+
+.uni-nav {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.uni-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.uni-nav a:hover {
+    text-decoration: underline;
+}
+
+.about-header-img {
+    margin-bottom: 1rem;
 }
 
 .top-content {
