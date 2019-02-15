@@ -275,6 +275,11 @@ footer nav a:hover {
     margin-bottom: 20px;
 }
 
+.learn-more {
+    display: none;
+    padding-top: 20px;
+}
+
 .content-card button {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -296,6 +301,10 @@ footer nav a:hover {
     position: relative;
     top: 1px;
     left: 1px;
+}
+
+.content-card button:active + .learn-more {
+    display: block;
 }
 
 .about-bottom-content {
