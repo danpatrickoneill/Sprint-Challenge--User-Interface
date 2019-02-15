@@ -83,7 +83,7 @@ p {
 .uni-nav {
     display: flex;
     justify-content: space-around;
-    flex: 1;
+    flex: 1; /* What exactly did that do? */
 }
 
 .uni-nav a {
@@ -261,7 +261,7 @@ footer nav a:hover {
 }
 
 .content-card {
-    width: 45%;
+    width: 46%;
     padding-bottom: 20px;
     margin-bottom: 40px;
     border-bottom: 1px dashed black;
