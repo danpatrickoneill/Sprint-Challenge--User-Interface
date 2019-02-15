@@ -266,12 +266,17 @@ footer nav a:hover {
     border-bottom: 1px dashed black;
 }
 
+.content-card img {
+    margin-bottom: 10px;
+}
+
 .content-card p {
     margin-bottom: 20px;
 }
 
 .content-card button {
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
     background: white;
     border: 2px solid black;
     border-radius: 8px;
