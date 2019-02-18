@@ -66,9 +66,40 @@ p {
     line-height: 1.4;
 }
 
+
+/* UNIVERSAL CSS STARTS HERE */
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.uni-header {
+    display: flex;
+    align-items: baseline;
+    margin: 20px 0 40px;
+}
+
+.uni-nav {
+    display: flex;
+    justify-content: space-around;
+    flex: 1; /* What exactly did that do? */
+}
+
+.uni-nav a {
+    font-size: .9em;
+    color: black;
+    text-decoration: none;
+}
+
+.uni-nav a:hover {
+    text-decoration: underline;
+}
+
+/* INDEX PAGE CSS STARTS HERE */
+
+.index-header-img {
+    margin-bottom: 20px;
 }
 
 .top-content {
@@ -112,6 +143,57 @@ p {
     justify-content: center;
 }
 
+/*  box1: teal
+ box2: gold
+ box3: cadetblue
+ box4: coral
+ box5: crimson
+ box6: forestgreen
+ box7: darkorchid
+ box8: hotpink
+ box9: indigo
+ box10: dodgerblue */
+
+.middle-content .boxes .box-1 {
+    background: teal;
+}
+
+.middle-content .boxes .box-2 {
+    background: gold;
+}
+
+.middle-content .boxes .box-3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box-4 {
+    background: coral;
+}
+
+.middle-content .boxes .box-5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box-6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box-7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box-8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box-9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box-10 {
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +225,149 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* ABOUT PAGE CSS STARTS HERE */
+/*  */
+
+.about-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.about-header-img {
+    margin-bottom: 20px;
+}
+
+.about-top-content {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed black;
+}
+
+.about-top-content h1, .about-top-content p {
+    /* Why doesn't margin: 0 auto; work here? Even just for the p? I feel like it's because its 800px wide, but I don't really get it */
+    padding: 0 20px;
+}
+
+.about-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-card {
+    width: 46%;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px dashed black;
+}
+
+.content-card img {
+    margin-bottom: 10px;
+}
+
+.content-card p {
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    display: none;
+    padding-top: 20px;
+}
+
+.content-card button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.content-card button:focus {
+    outline: 0;
+}
+
+.content-card button:hover {
+    background: #E5E5E5
+}
+
+.content-card button:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.content-card button:active + .learn-more {
+    display: block;
+}
+
+.about-bottom-content {
+    margin-bottom: 30px;
+}
+
+.about-bottom-content h3, .about-bottom-content p {
+    padding: 0 20px;
+}
+
+/* CONTACT PAGE CSS STARTS HERE */
+
+.contact-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.contact-form input {
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    height: 2em;
+    padding-left: 5px;
+    margin: 0 auto 30px;
+}
+
+.contact-form .subject-input {
+    height: 10em;
+}
+
+.contact-form button {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin: 0 auto 30px;
+}
+
+.contact-form a {
+    text-decoration: none;
+}
+
+.contact-form button:focus {
+    outline: 0;
+}
+
+.contact-form button:hover {
+    background: #E5E5E5
+}
+
+.contact-form button:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.contact-submission {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    margin: 40px 5%;
 }
